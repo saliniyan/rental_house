@@ -11,15 +11,16 @@ const Login = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-
+    
         // Check credentials
         if (email === 'a@gmail.com' && password === '123') {
-            login(); // Set authenticated state
+            login({ email }); // Pass user object to login function
             navigate('/home'); // Redirect to the home page
         } else {
             alert('Invalid email or password');
         }
     };
+    
 
     return (
         <section className="vh-100">

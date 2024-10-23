@@ -7,26 +7,26 @@ export const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(() => {
-    // Simulate fetching the current user (you can replace this with actual auth logic)
-    const userData = localStorage.getItem('user'); // Get user from localStorage
+    // Fetch user from localStorage
+    const userData = localStorage.getItem('user');
     if (userData) {
       try {
-        const user = JSON.parse(userData); // Attempt to parse the user data
-        setCurrentUser(user);
+        const user = JSON.parse(userData);
+        setCurrentUser(user); // Set user if found
       } catch (error) {
-        console.error("Error parsing user data:", error); // Log parsing error
+        console.error("Error parsing user data:", error);
       }
     }
-  }, []);
+  }, []); // Empty dependency array to run only on mount
 
   const login = (user) => {
     setCurrentUser(user);
-    localStorage.setItem('user', JSON.stringify(user)); // Store user in localStorage for demo purposes
+    localStorage.setItem('user', JSON.stringify(user)); // Persist user in localStorage
   };
 
   const logout = () => {
     setCurrentUser(null);
-    localStorage.removeItem('user'); // Remove user from localStorage
+    localStorage.removeItem('user'); // Clear user from localStorage
   };
 
   return (

@@ -1,9 +1,11 @@
 // src/components/Contact.js
 import React from 'react';
+import Navbar from './Navbar';
 
 const Contact = () => {
   return (
     <div>
+      <Navbar />
       <h1>Contact Us</h1>
       <p>We'd love to hear from you! Whether you have questions, feedback, or need assistance, reach out to us:</p>
       <h2>Email</h2>

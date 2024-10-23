@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuth } from './AuthContext';
 import { useNavigate } from 'react-router-dom';
-
+import Navbar from './Navbar';
 const Home = () => {
     const { logout } = useAuth();
     const navigate = useNavigate();
@@ -12,7 +12,8 @@ const Home = () => {
     };
 
     return (
-        <div className="container mt-4">
+        <div>
+            <Navbar />
             <header className="d-flex justify-content-between align-items-center mb-4">
                 <h1 className="text-primary">Welcome to Our Application!</h1>
                 <button className="btn btn-danger" onClick={handleLogout}>

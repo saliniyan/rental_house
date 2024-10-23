@@ -2,6 +2,7 @@ import React from 'react';
 import { useAuth } from './AuthContext';
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
+
 const Home = () => {
     const { logout } = useAuth();
     const navigate = useNavigate();

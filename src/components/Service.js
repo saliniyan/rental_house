@@ -1,9 +1,11 @@
-// src/components/Services.js
 import React from 'react';
+import Navbar from './Navbar';
+
 
 const Services = () => {
   return (
     <div>
+      <Navbar />
       <h1>Our Services</h1>
       <p>We offer a range of services to meet the diverse needs of our users:</p>
       <h2>1. Property Listings</h2>

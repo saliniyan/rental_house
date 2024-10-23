@@ -7,6 +7,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Service from "./components/Service";
+import Cart from "./components/Cart"
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/service" element={<Service />} />
+            <Route path="/cart" element={<Cart />} />
+
           </Routes>
         </div>
       </Router>

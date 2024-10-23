@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 const About = () => {
   return (
-    <div>
+    <div className="home-container">
       <Navbar />
       <h1>About Us</h1>
       <p>House Finder is dedicated to simplifying the house hunting process. We understand that moving to a new city can be overwhelming, and our mission is to make your search as seamless as possible.</p>

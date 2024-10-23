@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 const Services = () => {
   return (
-    <div>
+    <div className="home-container">
       <Navbar />
       <h1>Our Services</h1>
       <p>We offer a range of services to meet the diverse needs of our users:</p>
